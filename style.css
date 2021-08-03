@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #acd2fb;
+}
+
+a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #073668;
+  text-transform: uppercase;
+  position: relative;
+}
+
+a::before {
+  content: "THAPA ENVELOPE";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #7a004b;
+  text-transform: uppercase;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+a::after {
+  content: "THAPA ENVELOPE";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #028d6a;
+  text-transform: uppercase;
+  transform: rotateX(270deg);
+  transform-origin: bottom;
+  transition: all 0.5s;
+  transition-delay: 0.3s;
+}
+
+a:hover:before {
+  transform: rotateX(0deg);
+}
+
+a:hover:after {
+  transform: rotateX(0deg);
+}
