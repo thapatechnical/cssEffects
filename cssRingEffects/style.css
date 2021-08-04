@@ -17,8 +17,8 @@ body {
 a {
   text-transform: uppercase;
   text-decoration: none;
-  background-color: rgba(61, 61, 240, 0.815);
   color: #fff;
+  background-color: rgba(61, 61, 240, 0.8);
   padding: 10px 16px;
   border-radius: 30px;
   position: relative;
@@ -26,14 +26,15 @@ a {
 
 a::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: rgba(61, 61, 240, 0.815);
+  color: #fff;
+  background-color: rgba(61, 61, 240, 0.8);
   border-radius: 30px;
   z-index: -1;
   transition: all 0.3s;
@@ -45,11 +46,11 @@ a:hover::before {
 }
 
 a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  transform: translateY(-5px);
 }
 
 a:active {
-  transform: translateY(0);
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
 }
