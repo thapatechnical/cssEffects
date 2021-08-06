@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #acd2fb;
+}
+
+.main-div {
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  background-color: #1980ee;
+  border-radius: 10px;
+  clip-path: circle(21.9% at 100% 0);
+  transition: all 0.3s;
+}
+
+.main-div h1 {
+  margin: 30px 0;
+  color: rgb(171, 248, 28);
+}
+
+.main-div p {
+  color: #fff;
+  line-height: 150%;
+}
+
+.main-div h3 {
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+.main-div:hover {
+  clip-path: circle(141.4% at 100% 0);
+}
